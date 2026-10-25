@@ -1,4 +1,7 @@
-const pageFiles = Array.from({length: 11}, (_, i) => `assets/page-${String(i + 1).padStart(2, '0')}.jpg`);
+const pageFiles = Array.from(
+  { length: 11 },
+  (_, i) => `page-${String(i + 1).padStart(2, '0')}.jpg`
+);
 const pageNames = ['Sampul', 'Lembar pertama · awal cerita', 'Lembar pertama · mengenal kamu', 'Lembar pertama · momen kita', 'Lembar kedua · bertumbuh', 'Lembar memori', 'Siti Zahrah Aulia', 'Hal yang kamu ajarin', 'Sebelum hidup membawa kita', 'Ke mana pun hidup membawa kamu', 'Versi kita favoritku'];
 let currentPage = 0;
 const bookPage = document.getElementById('bookPage');
