@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#eee0c8" />
+  <meta name="description" content="Before We Become Memories — sebuah hadiah kecil untuk Siti, tentang enam tahun persahabatan dan cerita yang masih ingin dilanjutkan." />
+  <title>Before We Become Memories ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <audio id="bgMusic" loop preload="none"><source src="assets/music.mp3" type="audio/mpeg" /></audio>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Kembali ke awal">b.w.b.m. <span>♡</span></a>
+    <div class="top-actions"><span class="tiny-label">A LITTLE GIFT FOR SITI</span><button class="music-button" id="musicToggle" type="button" aria-pressed="false"><span id="musicIcon" aria-hidden="true">♫</span><span id="musicText">Play music</span></button></div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-doodle doodle-one" aria-hidden="true">✳</div><div class="hero-doodle doodle-two" aria-hidden="true">♡</div>
+      <p class="eyebrow">FOR ALL THE MEMORIES WE'VE MADE</p>
+      <h1>Before We<br><em>Become Memories.</em></h1>
+      <p class="subtitle">Sebelum kita menjadi kenangan</p>
+      <div class="cover-wrap">
+        <span class="tape tape-left"></span>
+        <img class="cover-image" src="assets/page-01.jpg" alt="Sampul buku Before We Become Memories" />
+        <span class="cover-caption">for all the memories we've made,<br>and all the ones yet to come ♡</span>
+      </div>
+      <button class="primary-button" id="startReading" type="button">Buka buku kecil kita <span>↘</span></button>
+      <p class="scroll-hint">PELAAAAN-PELAN AJA BACANYA <span>↓</span></p>
+    </section>
+
+    <section class="dedication section" id="dedication">
+      <p class="eyebrow">A LITTLE NOTE BEFORE YOU READ</p>
+      <h2>Hai, Sitt.<br><em>Ini buat kamu.</em></h2>
+      <div class="paper-note">
+        <span class="note-pin" aria-hidden="true">✦</span>
+        <p>Katanya kita punya banyak panggilan, banyak cerita, dan banyak versi diri yang tumbuh selama enam tahun ini. Jadi, sebelum semuanya berubah jadi kenangan, aku mau nyimpen sedikit cerita kita di sini.</p>
+        <span class="note-sign">— dari aku, yang masih mau punya banyak cerita sama kamu</span>
+      </div>
+      <p class="body-copy">Nggak semua hal di buku ini harus jadi cerita besar. Ada momen yang mungkin sederhana, ada yang lucu kalau diingat, dan ada juga yang baru terasa berarti setelah kita sampai sejauh ini.</p>
+    </section>
+
+    <section class="book-section section" id="the-book">
+      <div class="section-heading">
+        <p class="eyebrow">OUR STORY · PAGE BY PAGE</p>
+        <h2>Take your time.<br><em>Read it slowly.</em></h2>
+      <div class="book-reader">
+        <div class="reader-top"><span class="reader-label">BEFORE WE BECOME MEMORIES</span><span class="page-count" id="pageCount">PAGE 1 OF 11</span></div>
+        <div class="page-stage">
+          <button class="page-arrow prev" id="prevPage" type="button" aria-label="Halaman sebelumnya">‹</button>
+          <button class="page-image-button" id="zoomPage" type="button" aria-label="Perbesar halaman buku"><img id="bookPage" src="assets/page-01.jpg" alt="Halaman 1 dari buku Before We Become Memories" /></button>
+          <button class="page-arrow next" id="nextPage" type="button" aria-label="Halaman berikutnya">›</button>
+        </div>
+        <div class="reader-controls"><button class="outline-button" id="prevText" type="button">← Sebelumnya</button><span class="page-title" id="pageTitle">Sampul</span><button class="outline-button" id="nextText" type="button">Berikutnya →</button></div>
+        <div class="progress-track"><span id="progressBar"></span></div>
+        <div class="thumbnail-row" id="thumbnails" aria-label="Pilih halaman buku"></div>
+        <p class="reader-hint">Tip: klik halaman untuk melihatnya lebih besar, atau pilih nomor halaman di bawah.</p>
+      </div>
+    </section>
+
+    <section class="meaning section" id="meaning">
+      <p class="eyebrow">SOME THINGS I WANT YOU TO KNOW</p>
+      <h2>Hal yang kamu ajarin<br><em>tanpa kamu sadari.</em></h2>
+      <div class="quote-card"><span class="quote-mark">“</span><p>Bahwa hidup ternyata nggak harus selalu seserius itu. Bahwa bertemu orang baru nggak selalu menakutkan, bahwa membuka diri bukan berarti kehilangan diri sendiri.</p><span class="quote-credit">— dari cerita kita</span></div>
+      <div class="little-cards">
+        <article class="little-card card-yellow"><span>01 · THE BEGINNING</span><p>Dari awal yang biasa aja, ternyata tumbuh jadi cerita yang begitu berarti.</p></article>
+        <article class="little-card card-pink"><span>02 · THE GROWING</span><p>Kamu nggak harus ngajarin apa-apa secara langsung untuk bikin seseorang ikut bertumbuh.</p></article>
+        <article class="little-card card-blue"><span>03 · THE CONTINUING</span><p>Walau nanti jalan kita mungkin beda, enam tahun ini nggak jadi sia-sia.</p></article>
+      </div>
+    </section>
+
+    <section class="future section" id="future">
+      <p class="eyebrow">BEFORE LIFE TAKES US ELSEWHERE</p>
+      <h2>Ke mana pun hidup<br><em>membawa kamu.</em></h2>
+      <div class="future-card">
+        <p>Aku nggak tahu tahun depan kita masih bisa sesering sekarang bertukar cerita atau enggak. Aku juga nggak tahu jalan yang kita pilih nanti bakal membawa kita ke tempat yang sama atau enggak.</p>
+        <p>Tapi aku mau tetap mengusahakan komunikasi kita, tetap nyempatin waktu, nanyain kabar kamu, dengerin cerita kamu, dan jadi orang yang bisa kamu cari pas kamu butuh teman.</p>
+        <p>Aku mau suatu hari nanti, pas kita lihat lagi masa-masa ini, kita nggak cuma ngomong, “Dulu kita pernah sedekat itu, ya.” Aku mau kita juga bisa ngomong, <em>“Untungnya, kita tetap saling menemukan.”</em></p>
+      </div>
+      <div class="final-note">“Semoga ini bukan akhir dari cerita kita,<br><em>melainkan awal dari bab baru.</em>”</div>
+    </section>
+
+    <section class="ending section" id="ending">
+      <div class="ending-star" aria-hidden="true">✳</div>
+      <p class="eyebrow">HAPPY BIRTHDAY, SITT ♡</p>
+      <h2>Six years behind us.<br><em>More stories ahead.</em></h2>
+      <p class="hero-copy">Makasih udah hadir, nemenin, dan jadi salah satu bagian paling berarti dari masa remajaku.</p>
+      <p class="ending-small">Semoga kita sama-sama sampai di tempat yang kita impikan, terus suatu hari ketemu lagi buat ceritain semuanya.</p>
+      <p class="last-line">Kalau nanti kita sibuk sama hidup masing-masing,<br>jangan sampai kita lupa cara jadi teman, ya? ♡</p>
+      <button class="text-button" id="backToTop" type="button">Baca cerita kita lagi ↑</button>
+      <footer>MADE WITH LOVE, JUST FOR YOU · <span>♡</span></footer>
+    </section>
+  </main>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Halaman buku diperbesar"><button class="close-lightbox" id="closeLightbox" type="button" aria-label="Tutup halaman">×</button><img id="lightboxImage" src="assets/page-01.jpg" alt="Halaman buku yang diperbesar" /><p id="lightboxCaption">PAGE 1 OF 11</p></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
